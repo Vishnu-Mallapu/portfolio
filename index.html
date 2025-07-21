@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Vishnu Mallapu Prasad - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.experience-item, .education-item, .cert-item, .project-item, .achievement-item {
+				margin-bottom: 2em;
+				padding: 1.5em;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 8px;
+				border-left: 4px solid #8cc9f0;
+			}
+			.date-range { color: #8cc9f0; font-weight: bold; font-size: 0.9em; }
+			.company, .institution { color: #ffffff; font-size: 1.2em; font-weight: bold; margin-bottom: 0.5em; }
+			.position, .degree { color: #b5b5b5; font-style: italic; margin-bottom: 1em; }
+			.achievements { margin-top: 1em; }
+			.achievements li { margin-bottom: 0.5em; font-size: 15px; }
+			.skills-container {
+				background: rgba(255, 255, 255, 0.02);
+				padding: 3em 2em;
+				border-radius: 15px;
+				border: 1px solid rgba(140, 201, 240, 0.1);
+				margin-top: 2em;
+			}
+			.skills-section { margin-bottom: 3em; }
+			.skills-section:last-child { margin-bottom: 0; }
+			.skills-section h3 {
+				color: #8cc9f0; font-size: 1.5em; margin-bottom: 1.5em; text-align: center; position: relative;
+			}
+			.skills-section h3::after {
+				content: ''; display: block; width: 60px; height: 3px; background: linear-gradient(135deg, #8cc9f0, #005a9e);
+				margin: 0.5em auto 0; border-radius: 2px;
+			}
+			.skills-row {
+				display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2em; margin-bottom: 2em;
+			}
+			.skill-card {
+				background: linear-gradient(135deg, rgba(140, 201, 240, 0.05), rgba(140, 201, 240, 0.02));
+				padding: 2em; border-radius: 12px; border-left: 4px solid #8cc9f0;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.skill-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(140, 201, 240, 0.1); }
+			.skill-card h4 { color: #ffffff; font-size: 1.1em; margin-bottom: 1em; text-align: center; }
+			.skill-card ul { list-style: none; padding: 0; }
+			.skill-card li {
+				font-size: 15px; color: #b5b5b5; margin-bottom: 0.8em; padding-left: 1.5em; position: relative;
+			}
+			.skill-card li::before {
+				content: '▶'; position: absolute; left: 0; color: #8cc9f0; font-size: 12px;
+			}
+			.contact-info {
+				display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2em; margin-top: 2em;
+			}
+			.cert-link { color: #8cc9f0; text-decoration: none; font-weight: bold; }
+			.cert-link:hover { text-decoration: underline; }
+			.achievement-text { font-size: 15px; line-height: 1.6; margin-bottom: 1em; }
+			.profile-image-container { position: relative; display: inline-block; }
+			.intro-wrapper { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+			.intro-text { max-width: 65%; }
+			.badge-image { max-width: 200px; margin-left: 20px; }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Vishnu Mallapu Prasad</h1>
+						<p>Senior SQL DBA & Azure Certified Database Administrator<br />
+						Specializing in Microsoft SQL Server & Azure Database Solutions</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#certifications">Certifications</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#achievements">Achievements</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<!-- Introduction -->
+<section id="intro" class="main">
+    <div class="intro-wrapper">
+        <div class="intro-text">
+            <header class="major">
+                <h2>About Me</h2>
+            </header>
+            <p>I am a <strong>Senior SQL Server DBA</strong> with over <strong>10 years of experience</strong> managing 500+ mission-critical databases across financial and enterprise domains. I specialize in <strong>high availability (Always On AG)</strong>, disaster recovery, and performance tuning for complex database environments.</p>
+            
+            <p>Certified as a <strong>Microsoft Azure Database Administrator (DP-300)</strong>, I possess extensive expertise in <strong>Azure SQL Database, Managed Instances</strong>, and hybrid cloud migrations. My focus on automation using <strong>PowerShell, Jenkins CI/CD pipelines</strong>, and proactive performance monitoring has resulted in measurable uptime and efficiency improvements.</p>
+            
+            <p>With proven leadership in managing <strong>5-member DBA teams</strong> and <strong>3 years of international onsite experience in Mexico</strong>, I bring a strategic mindset for building resilient, secure, and scalable database solutions that align with business continuity goals.</p>
+        </div>
+
+        <div class="profile-image-container" style="position: relative; text-align: center;">
+            <!-- Profile Photo -->
+            <img src="images/pic07.png" alt="Profile Picture" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 4px solid #8cc9f0;">
+
+            <!-- Azure Badge -->
+            <img src="images/pic08.png" alt="Azure Certified Badge" 
+                 style="position: absolute; bottom: -10px; right: -10px; width: 80px; height: 80px; border: 3px solid white; border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);">
+        </div>
+    </div>
+</section>
+
+
+						<!-- Work Experience -->
+							<section id="experience" class="main special">
+								<header class="major">
+									<h2>Professional Experience</h2>
+									<p>Highlights of roles, responsibilities, and achievements</p>
+								</header>
+								
+								<div class="experience-item">
+									<div class="date-range">Feb 2019 – Present</div>
+									<div class="company">TATA CONSULTANCY SERVICES</div>
+									<div class="position">Senior Database Administrator - Technical Lead</div>
+									<ul>
+										<li>Led a 5-member DBA team managing 500+ SQL Server instances across production and UAT environments.</li>
+										<li>Achieved 99.9% uptime with proactive monitoring and automated PowerShell health checks.</li>
+										<li>Implemented Always On Availability Groups and advanced security measures (TDE, Always Encrypted).</li>
+										<li>Automated database deployments with Jenkins CI/CD pipelines and Rubrik backup strategies.</li>
+										<li>Improved query performance by 25% through execution plan analysis and index tuning.</li>
+									</ul>
+								</div>
+
+								<div class="experience-item">
+									<div class="date-range">Sep 2017 – Jan 2019</div>
+									<div class="company">Peopleone Technology</div>
+									<div class="position">Reporting Analyst</div>
+									<ul>
+										<li>Developed automated reporting solutions using SSRS, Power BI, and T-SQL procedures.</li>
+										<li>Reduced manual reporting by 60% with SQL Agent jobs and SSIS workflows.</li>
+										<li>Built executive KPI dashboards providing data-driven insights for stakeholders.</li>
+										<li>Streamlined multi-system data extraction for enterprise reporting requirements.</li>
+										<li>Collaborated with cross-functional teams for strategic decision-making analytics.</li>
+									</ul>
+								</div>
+
+								<div class="experience-item">
+									<div class="date-range">Nov 2015 – Sep 2016</div>
+									<div class="company">Ramco System</div>
+									<div class="position">SQL L1 Support</div>
+									<ul>
+										<li>Provided backend SQL support for aviation ERP product demos and customizations.</li>
+										<li>Developed SQL Server 2008 stored procedures to meet client-specific requirements.</li>
+										<li>Enhanced database performance through query optimization and indexing.</li>
+										<li>Conducted end-to-end system testing for aviation software projects.</li>
+										<li>Supported pre-sales teams with technical expertise and solution demos.</li>
+									</ul>
+								</div>
+
+								<div class="experience-item">
+									<div class="date-range">Jun 2014 – Nov 2015</div>
+									<div class="company">First Source Solution Limited</div>
+									<div class="position">Senior Process Associate</div>
+									<ul>
+										<li>Developed stored procedures to streamline large-scale data processing workflows.</li>
+										<li>Created dashboards for monitoring process performance and KPIs.</li>
+										<li>Led automation projects reducing reporting time by 40%.</li>
+										<li>Optimized queries to enhance database efficiency and scalability.</li>
+										<li>Earned multiple recognition awards for innovation and high performance.</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Education -->
+							<section id="education" class="main special">
+								<header class="major">
+									<h2>Education</h2>
+									<p>Academic foundation in engineering and technology</p>
+								</header>
+								
+								<div class="education-item">
+									<div class="date-range">Apr 2010 – Apr 2014</div>
+									<div class="institution">Sriram Engineering College - Chennai</div>
+									<div class="degree">Bachelor of Electronics and Communication Engineering</div>
+									<div class="location">Chennai, India</div>
+									<p>Comprehensive engineering education providing strong analytical and problem-solving foundation for database administration and technical leadership roles.</p>
+								</div>
+							</section>
+
+						<!-- Certifications -->
+							<section id="certifications" class="main special">
+    <header class="major">
+        <h2>Certifications</h2>
+        <p>Professional certifications demonstrating expertise in cloud database technologies</p>
+    </header>
+    
+    <div class="cert-item">
+        <div class="cert-name">Azure Database Administrator Associate (DP-300)</div>
+        <div class="date-range">Issued: June 2025</div>
+        <div class="cert-id">Certificate ID: F3KA39-7C69B4</div>
+        <p>This certification validates expertise in Azure SQL Database, Managed Instances, security, performance tuning, and migration strategies.</p>
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/VIshnuPrasad-4069/481AE4C3772E5614?sharingId=91A3161FA1545E7" class="cert-link" target="_blank">🔗 View Certificate</a>
+    </div>
+</section>
+
+
+						<!-- Skills -->
+							<section id="skills" class="main special">
+								<header class="major">
+									<h2>Skills & Technical Expertise</h2>
+									<p>Comprehensive database administration and cloud technology skills</p>
+								</header>
+								
+								<div class="skills-container">
+									<div class="skills-section">
+										<h3>Database Technologies</h3>
+										<div class="skills-row">
+											<div class="skill-card">
+												<h4>Microsoft SQL Server</h4>
+												<ul>
+													<li>SQL Server 2012–2022</li>
+													<li>Always On Availability Groups</li>
+													<li>Failover Clustering</li>
+													<li>Log Shipping & Replication</li>
+													<li>Backup/Restore Strategies</li>
+												</ul>
+											</div>
+											<div class="skill-card">
+												<h4>Azure Database Services</h4>
+												<ul>
+													<li>Azure SQL Database</li>
+													<li>Azure SQL Managed Instance</li>
+													<li>Database Migration Service</li>
+													<li>Azure Monitor & Automation</li>
+													<li>Hybrid Cloud Environments</li>
+												</ul>
+											</div>
+											<div class="skill-card">
+												<h4>Emerging Technologies</h4>
+												<ul>
+													<li>PostgreSQL (Learning)</li>
+													<li>Multi-platform Management</li>
+													<li>NoSQL Concepts</li>
+													<li>Database Containerization</li>
+													<li>Cloud-Native Solutions</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="skills-section">
+										<h3>Performance & Optimization</h3>
+										<div class="skills-row">
+											<div class="skill-card">
+												<h4>Query Optimization</h4>
+												<ul>
+													<li>Execution Plan Analysis</li>
+													<li>Index Tuning & Design</li>
+													<li>Query Store Optimization</li>
+													<li>Statistics Management</li>
+													<li>Performance Baselines</li>
+												</ul>
+											</div>
+											<div class="skill-card">
+												<h4>Monitoring & Analysis</h4>
+												<ul>
+													<li>Wait Statistics Analysis</li>
+													<li>Resource Monitoring</li>
+													<li>Performance Counters</li>
+													<li>Deadlock Resolution</li>
+													<li>Capacity Planning</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="skills-section">
+										<h3>Security & Compliance</h3>
+										<div class="skills-row">
+											<div class="skill-card">
+												<h4>Data Protection</h4>
+												<ul>
+													<li>Transparent Data Encryption</li>
+													<li>Always Encrypted</li>
+													<li>Column-Level Security</li>
+													<li>Data Classification</li>
+													<li>Backup Encryption</li>
+												</ul>
+											</div>
+											<div class="skill-card">
+												<h4>Access Control</h4>
+												<ul>
+													<li>Role-Based Access Control</li>
+													<li>SQL Server Audit</li>
+													<li>Firewall Configuration</li>
+													<li>Authentication Methods</li>
+													<li>HashiCorp Vault (Learning)</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="skills-section">
+										<h3>Automation & DevOps</h3>
+										<div class="skills-row">
+											<div class="skill-card">
+												<h4>Scripting & Automation</h4>
+												<ul>
+													<li>PowerShell Scripting</li>
+													<li>T-SQL Programming</li>
+													<li>SQL Agent Jobs</li>
+													<li>Maintenance Plans</li>
+													<li>Health Check Automation</li>
+												</ul>
+											</div>
+											<div class="skill-card">
+												<h4>CI/CD Integration</h4>
+												<ul>
+													<li>Jenkins Pipelines</li>
+													<li>GitLab CI/CD</li>
+													<li>Database Deployment</li>
+													<li>Version Control</li>
+													<li>Infrastructure as Code</li>
+												</ul>
+											</div>
+											<div class="skill-card">
+												<h4>Backup & Recovery</h4>
+												<ul>
+													<li>Rubrik Backup Solutions</li>
+													<li>Disaster Recovery Planning</li>
+													<li>Point-in-Time Recovery</li>
+													<li>Cross-Region Replication</li>
+													<li>RTO/RPO Optimization</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="skills-section">
+										<h3>Tools & Platforms</h3>
+										<div class="skills-row">
+											<div class="skill-card">
+												<h4>Management Tools</h4>
+												<ul>
+													<li>SQL Server Management Studio</li>
+													<li>Azure Data Studio</li>
+													<li>Visual Studio Code</li>
+													<li>Azure Portal</li>
+													<li>PowerShell ISE</li>
+												</ul>
+											</div>
+											<div class="skill-card">
+												<h4>Monitoring Solutions</h4>
+												<ul>
+													<li>Redgate Toolbelt</li>
+													<li>SQL Profiler</li>
+													<li>Extended Events</li>
+													<li>Azure Log Analytics</li>
+													<li>System Center</li>
+												</ul>
+											</div>
+											<div class="skill-card">
+												<h4>Reporting & BI</h4>
+												<ul>
+													<li>SQL Server Reporting Services</li>
+													<li>Power BI</li>
+													<li>SQL Server Integration Services</li>
+													<li>Excel Advanced Analytics</li>
+													<li>Data Visualization</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- Achievements -->
+							<section id="achievements" class="main special">
+								<header class="major">
+									<h2>Professional Achievements & Recognition</h2>
+								</header>
+								<div class="achievement-item" style="font-size:  16px;">
+									<ul>
+										<li>Best Employee Award – Tata Consultancy Services (May 2023 & July 2024) for database performance and leadership excellence.</li>
+										<li>Star of the Month – First Source Solutions Ltd (2015) for process optimization initiatives.</li>
+										<li>Successfully led 5-member DBA teams and completed 3 years onsite in Mexico supporting US financial clients.</li>
+										<li>Achieved 99.9% database uptime across 500+ SQL Server instances with Always On AG and proactive monitoring.</li>
+										<li>Reduced manual operations by 40% through PowerShell scripting and automation initiatives.</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Contact -->
+							<section id="contact" class="main special">
+								<header class="major">
+									<h2>Get In Touch</h2>
+									<p>Let's discuss how I can contribute to your database administration needs</p>
+								</header>
+								
+								<div class="contact-info">
+									<div>
+										<h3>Contact Information</h3>
+										<dl class="alt">
+											<dt>Email</dt>
+											<dd><a href="mailto:vishnuprasad210493@gmail.com">vishnuprasad210493@gmail.com</a></dd>
+											<dt>Location</dt>
+											<dd>Chennai, India</dd>
+											<dt>Born</dt>
+											<dd>April 21, 1993</dd>
+											<dt>Preferred Locations</dt>
+											<dd>Chennai / Hyderabad / Bengaluru / International</dd>
+										</dl>
+									</div>
+									
+									<div>
+										<h3>Professional Links</h3>
+										<ul class="icons">
+											<li><a href="https://linkedin.com/in/vishnu-prasad-4a1697104" class="icon brands fa-linkedin alt" target="_blank"><span class="label">LinkedIn</span></a></li>
+											<li><a href="https://github.com/Vishnu2104-MS" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
+										</ul>
+										
+										<h4>Availability</h4>
+										<p>Open to opportunities in Chennai, Hyderabad, Bengaluru, Remote work, or International assignments. Extensive onsite experience (3 years in Mexico) and willing to travel internationally.</p>
+									</div>
+								</div>
+								
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="mailto:vishnuprasad210493@gmail.com" class="button primary">Email Me</a></li>
+										<li><a href="https://linkedin.com/in/vishnu-prasad-4a1697104" class="button" target="_blank">LinkedIn Profile</a></li>
+									</ul>
+								</footer>
+							</section>
+								<div style="margin-bottom: 30px;">
+
+								</div>
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
